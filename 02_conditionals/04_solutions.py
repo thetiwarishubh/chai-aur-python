@@ -1,5 +1,5 @@
-fruit = "Banana"
-color = "red"
+fruit = input("Please enter fruit name ? ")
+color = input("Please enter color name ? ")
 
 if fruit == "Banana": 
     if color == "Green" :

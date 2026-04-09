@@ -1,8 +1,8 @@
-weather = "Sunny"
+weather = input("Please enter weather ? ")
 
-if weather == "Sunny" : 
-    print("Go for a walk")
-elif weather == "Rainy" : 
-    print("Read a Book")
-else : 
-    print("Build a snowman")
+if weather == "sunny" :
+    print("Go for a walk.")
+elif weather == "rainy" :
+    print("Read a book.")
+else :
+    print("Build a snowman.")

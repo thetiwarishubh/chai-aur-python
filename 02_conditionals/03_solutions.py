@@ -1,4 +1,4 @@
-score = 64
+score = int(input("Please enter your score ? "))
 
 
 if score < 0 or score > 100 :

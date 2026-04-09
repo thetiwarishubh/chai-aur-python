@@ -1,7 +1,17 @@
-order_size = "Medium"
-extra_shot = True
+order_size = input("Please enter coffee size ? ")
+extra_shot = input("Please enter extra shot ? ").strip().lower()
 
-if extra_shot : 
+extraShotOutput = ""
+
+if extra_shot == "true" :
+    extraShotOutput = True
+elif extra_shot == "false":
+    extraShotOutput = False
+else :
+    print("Invalid")
+
+
+if extraShotOutput : 
     print("Coffee with extra shot")
 else :
     print("Coffee without extra Shot")

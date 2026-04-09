@@ -1,4 +1,4 @@
-password = "Shubham"
+password = input("Please enter your password ? ")
 
 if len(password) < 6 :
     print("Weak")

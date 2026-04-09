@@ -1,4 +1,4 @@
-distance = 220 #km
+distance = int(input("Please enter distance in km ? "))
 
 if distance < 3 :
     print("Walk")
