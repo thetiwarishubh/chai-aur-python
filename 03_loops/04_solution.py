@@ -1,4 +1,4 @@
-username = "Shubham"
+username = input("Please enter string ? ").lower()
 reversed_username = ""
 
 for i in username : 

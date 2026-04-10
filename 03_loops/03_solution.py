@@ -1,4 +1,4 @@
-number = 7
+number = int(input("Please enter number ? "))
 
 for i in range(1, 11) :
     if i == 5 :
