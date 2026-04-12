@@ -15,8 +15,9 @@ age = int(input("Please enter your age ? "))
 
 try :
     if age < 10 or age > 18 :
-        raise ValueError("You'are not eligible for the club")
+        raise ValueError("You're not eligible for the club")
     else :
         print("Welcome to the club")
+
 except  Exception as Error:
-    print(f"Got and {Error}")
+    print(f"Got and -- {Error}")
