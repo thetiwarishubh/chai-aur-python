@@ -73,3 +73,8 @@ for i in range(len(l) -1 ):
         break
 else :
     print("Your list is sorted")
+
+
+
+l = [i for i in range(1, 101) if i % 2 == 0]
+print(l)
