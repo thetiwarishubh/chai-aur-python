@@ -1,7 +1,6 @@
 import random
 
-condition = True
-while condition : 
+while True : 
     choice = input("Do you want to play (Y/N) ?").lower()
 
     if choice == "y" :
