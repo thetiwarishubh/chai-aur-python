@@ -11,5 +11,5 @@ while True :
         print("Number is Too low")
     else :
         print("Equal Number")
-        print("The Count is ", count)
+        print(f"You got the number {guess}, and count is {count}")
         break
