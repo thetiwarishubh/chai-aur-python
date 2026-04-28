@@ -138,3 +138,158 @@ data7 = [100, 200, 300, 400, 500]
 data7.reverse()
 # list(reversed(data7))
 print(data7)
+
+
+"""
+Exercise 8. Sort a List of Numbers
+Practice Problem: Sort a list of numbers in ascending order (lowest to highest).
+
+Exercise Purpose: Sorting is perhaps the most studied topic in Computer Science. It turns chaotic data into organized data, which is a prerequisite for high-speed search algorithms like Binary Search. Python uses Timsort, an efficient, hybrid sorting algorithm.
+
+Given Input: Unsorted: [56, 12, 89, 3, 22]
+
+Expected Output: Sorted List: [3, 12, 22, 56, 89] 
+
+"""
+
+numbers8 = [56, 12, 89, 3, 22]
+
+numbers8.sort()
+print(numbers8)
+
+
+
+"""
+Exercise 9. Create a Copy of a List
+Practice Problem: Create a copy of an existing list so that modifying the copy does not change the original.
+
+Exercise Purpose: This exercise addresses one of the most common “gotchas” for new Python programmers: Pass-by-Object-Reference. If you simply write list_b = list_a, both variables point to the same list in memory. Learning to “Clone” or “Copy” is vital for data integrity.
+
+Given Input: Original: ["Apple", "Banana", "Cherry"]
+
+"""
+
+original_list = ["Apple", "Banana", "Cherry"]
+copied_list = original_list.copy()
+print(copied_list)
+copied_list[0] = "Mango"
+print(copied_list)
+print(original_list)
+
+
+"""
+Exercise 10. Combine Two Lists
+Practice Problem: Merge two separate lists into a single, unified list.
+
+Exercise Purpose: Data often arrives in fragments from different sources (e.g., two different database queries). Combining or “Concatenating” them is the first step in data aggregation.
+
+Given Input:
+
+List A: ["Physics", "Chemistry"]
+List B: ["Maths", "Biology"]
+Expected Output: Combined List: ['Physics', 'Chemistry', 'Maths', 'Biology']
+
+"""
+
+list_a = ["Physics", "Chemistry"]
+List_b = ["Maths", "Biology"]
+
+joined_list = list_a + List_b
+print(joined_list)
+
+
+"""
+Exercise 11. List Slicing: Extract Middle Elements
+Practice Problem: Given a list, extract a “slice” containing the middle three elements.
+
+Exercise Purpose: Slicing is one of Python’s most powerful features. Unlike many languages that require manual loops to copy array sub-sections, Python uses [start:stop] syntax. This forms the foundation for data windowing and pagination in web development.
+
+Given Input: List: [10, 20, 30, 40, 50, 60, 70]
+
+Expected Output: Middle Three: [30, 40, 50]
+
+"""
+
+list_elements = [10, 20, 30, 40, 50, 60, 70]
+
+print(list_elements[2:5])
+print(list_elements[::-1])
+
+"""
+Exercise 12. Swap Two Elements at Given Indices
+Practice Problem: Write a script to swap the positions of two elements in a list based on their indices.
+
+Exercise Purpose: Swapping is the heart of every sorting algorithm like Bubble Sort or Quick Sort. While other languages require a temporary variable to hold a value during the swap, Python offers an elegant, one-line tuple unpacking method that is faster to write and less error-prone.
+
+Given Input:
+
+List: [23, 65, 19, 90]
+Indices to Swap: 0 and 2
+
+"""
+
+question12 = [23, 65, 19, 90]
+question12[0], question12[2] = question12[2], question12[0]
+print(question12)
+
+
+"""
+Exercise 13. Access Nested Lists (Simple Indexing)
+Practice Problem: Given a “list of lists,” access a specific item hidden inside the inner list.
+
+Exercise Purpose: This exercise teaches you to navigate Multi-dimensional Data. Think of nested lists like a spreadsheet (Rows and Columns) or a theater seating chart. To find a specific seat, you need the row and seat numbers.
+
+Given Input:
+
+Nested List: [[1, 2], [3, 4, 5], [6, 7]]
+Goal: Access the number 5.
+Expected Output: Accessed Value: 5
+
+"""
+
+question13 = [[1, 2], [3, 4, 5], [6, 7]]
+print(question13[1][2])
+
+
+"""
+Exercise 14. Check if List Contains a Specific Item
+Practice Problem: Write a check to see if a certain value exists within a list and print a message based on the result.
+
+Exercise Purpose: This is a Membership Test. It’s the logic used for “Is this username taken?” or “Is this item in the shopping cart?” Python’s in operator makes this incredibly readable, almost like plain English.
+
+Given Input:
+
+Inventory: ["Laptop", "Mouse", "Monitor", "Keyboard"]
+Target: "Tablet"
+Expected Output: Is Tablet in inventory? False
+
+"""
+
+question14 = ["Laptop", "Mouse", "Monitor", "Keyboard"]
+
+for x in question14 :
+    if x == "Tablet" :
+        print(True)
+    else :
+        print(False)
+
+"""
+Exercise 15. Find the Longest String in a List
+Practice Problem: In a list of strings, identify which string has the most characters.
+
+Exercise Purpose: This combines Iteration with Comparison. It teaches you how to evaluate an attribute of an object (its length) rather than just its raw value. This is used in text processing, UI layout, and data cleaning.
+
+Given Input: Words: ["PHP", "Exercises", "Backend", "Python"]
+
+Expected Output: Longest word: Exercises
+
+"""
+
+question15 = ["PHP", "Exercises", "Backend", "Python"]
+longest_words = question15[0]
+
+for x in question15 :
+    if longest_words > x :
+        longest_words = x
+
+print(longest_words)
