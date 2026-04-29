@@ -289,7 +289,8 @@ question15 = ["PHP", "Exercises", "Backend", "Python"]
 longest_words = question15[0]
 
 for x in question15 :
-    if longest_words > x :
+    if len(x) > len(longest_words) :
         longest_words = x
 
 print(longest_words)
+
