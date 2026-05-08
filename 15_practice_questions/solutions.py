@@ -21,12 +21,12 @@ for x in range(1, 11) :
     print(f"{num} * {x} = {num * x}")
 
 
+
 # Factorial of a number
 
 fact = int(input("Please enter a num ? "))
 fact_num = 1
 for x in range(fact , 0, -1) :
     fact_num *=  x
-
 
 print(fact_num)
