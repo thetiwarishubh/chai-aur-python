@@ -5,4 +5,4 @@
 5. Capitalize first letter
 6. Remove spaces
 7. Character frequency
-8Longest word finder
+8. Longest word finder
